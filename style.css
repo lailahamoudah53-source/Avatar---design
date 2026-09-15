@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Body */
+body {
+    background-image: linear-gradient(to right, #01022d, #000);
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Container */
+.container {
+    width: 90%;
+    height: 640px;
+
+    background-image:
+        linear-gradient(to right, #01022de5 30%, #00000088),
+        url("Avatar.jpeg");
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Change background when hovering */
+.container:hover {
+    background-image:
+        linear-gradient(to right, #01022de5 30%, transparent),
+        url("Avatar.jpeg");
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+/* Navigation */
+ul {
+    width: 60%;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Navigation Links */
+ul a {
+    border-bottom: 2px solid transparent;
+}
+
+
+/* Navigation Hover */
+ul a:hover {
+    border-bottom-color: white;
+}
+
+
+/* Content */
+.content {
+    color: white;
+
+    width: 50%;
+
+    margin-top: 50px;
+
+    padding: 30px;
+}
+
+
+/* Title */
+.content h2 {
+    font-size: 100px;
+
+    text-transform: uppercase;
+}
+
+
+/* Paragraph */
+.content p {
+    letter-spacing: 3px;
+
+    width: 358px;
+
+    padding: 20px 0;
+
+    line-height: 1.6;
+}
+
+
+/* Button */
+.content button {
+    font-size: 30px;
+
+    padding: 6px 10px;
+
+    border-radius: 10px;
+
+    border: 2px solid transparent;
+
+    cursor: pointer;
+}
+
+
+/* Button Hover */
+.content button:hover {
+    background-color: transparent;
+
+    border-color: white;
+
+    color: white;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .container {
+        width: 95%;
+        height: 600px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .content h2 {
+        font-size: 60px;
+    }
+
+    .content p {
+        width: 90%;
+        letter-spacing: 1px;
+    }
+
+    .content button {
+        font-size: 22px;
+    }
+}
